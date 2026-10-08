@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cape Town Sights</title>
+  <style>
+    :root { --accent: #008080; --dark: #1f2937; --bg: #f8fafc; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+    body { background: var(--bg); color: var(--dark); line-height: 1.5; }
+    header { background: #fff; border-bottom: 1px solid #e2e8f0; padding: 1rem; position: sticky; top: 0; z-index: 10; }
+    .nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; color: var(--accent); text-decoration: none; font-size: 1.2rem; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; padding: 5rem 1rem; text-align: center; }
+    .sights { max-width: 1100px; margin: 3rem auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    footer { background: var(--dark); color: #9ca3af; padding: 2rem 1rem; margin-top: 3rem; }
+    .footer-grid { max-width: 1100px; margin: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    @media (max-width: 600px) { .footer-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav">
+      <a href="#" class="logo">🏔️ CAPE TOWN SIGHTS</a>
+      <span>Explore the Mother City</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Discover Cape Town</h1>
+      <p>Iconic landmarks, stunning coastlines, and world-class nature.</p>
+    </section>
+
+    <section class="sights">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=500&q=80" alt="Table Mountain">
+        <div class="card-body">
+          <h3>Table Mountain</h3>
+          <p>Ascend via cableway or hike for panoramic views of the city and Atlantic Ocean.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Boulders Beach">
+        <div class="card-body">
+          <h3>Boulders Beach</h3>
+          <p>Home to a famous wild colony of endangered African penguins near Simon's Town.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=500&q=80" alt="Cape Point">
+        <div class="card-body">
+          <h3>Cape Point</h3>
+          <p>Dramatic sea cliffs, historic lighthouses, and coastal nature reserves at the southwestern tip.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4 style="color:#fff">Cape Town Tourism</h4>
+        <p>Western Cape, South Africa</p>
+      </div>
+      <div>
+        <p>&copy; 2026 Cape Town Travel Guide. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
